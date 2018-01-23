@@ -34,7 +34,7 @@ public class AdminController {
 
     private static Logger log = LoggerFactory.getLogger(AdminController.class);
 
-    private final static Integer SIZE = 10;
+    private final static Integer SIZE = 5;
     @Autowired
     private MetasRepository metasRepository;
 

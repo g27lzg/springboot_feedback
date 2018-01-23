@@ -2,9 +2,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/tale?useUnicode=true&characterEncoding=utf8
-    username: admin
-    password: admin
+    url: jdbc:mysql://localhost:3306/db_person?useUnicode=true&characterEncoding=utf8
+    username: root
+    password:
     # 初始化大小，最小，最大
     initialSize: 5
     minIdle: 5
@@ -51,7 +51,7 @@ server:
   port: 8080
   tomcat:
     uri-encoding: UTF-8
-  context-path: /taleblog
+  context-path: /
 #七牛的存储
 qiniu:
   imgSpace: ycimgs
@@ -70,5 +70,3 @@ securityconfig:
             /role/edit/* = sa;
             /role/delete/** = sa;
             /order/delete/** = admin
-
-
